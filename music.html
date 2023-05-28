@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="title">Chill out</title>
+    <link rel="shortcut icon" href="image/icons/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-5.3.0-alpha3-dist/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/owner.css">
+    <link rel="stylesheet" type="text/css" href="css/music.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+    
+    <!--============================================ HEADER ===================================================-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="image/logo.png" alt="Logo" style="width:100px; height:50px;">
+                </div>
+                <nav class="navbar navbar-expand-sm navbar-dark col-9">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon flex-row-reverse"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="https://my-music.github.io/owner.html">Homepage</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">My Music</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://my-music.github.io/">Music App</a></li>
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-bs-toggle="dropdown">
+                                    <img class="rounded-circle" style="width:30px; height:30px;" src="image/avatar.jpg"
+                                        alt="Ảnh người dùng">&nbsp
+                                    Trần Lê Minh
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="https://mastertlm.github.io/">Profile</i></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">Logout &nbsp <i class="fa fa-sign-out"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--============================================ MUSIC PLAYER ===================================================-->
+    <section class="bg">
+        <div class="music-player">
+            <h1 id="title-music">Reality</h1>
+            <h4 id="singer">Lost Frequencies, Janieck Devy</h4>
+                    <div class="album-cover">
+                        <div class="cd-container">
+                            <div class="cd"></div>
+                                <img src="album/cover/reality.jpg" alt="Album Cover" id="cover">
+                                <!-- <img src="image/music-start.jpg" alt="Album Cover" id="cover"> -->
+                            </div>
+                        </div>
+                        <audio id="audio" src="album/music/reality.mp3"></audio>
+                        <div class="seek-container">
+                            <input type="range" min="0" max="100" value="0" class="seek-bar">
+                            <span class="time"></span>
+                            <div class="volume-container">
+                                <button class="volume-btn"><img src="image/icons/volume.png" style="width: 35px;"></button>
+                                <input id="volume" type="range" min="0" max="1" step="0.1" onchange="changeVolume()" value="1" class="volume-bar" style="transform: rotate(-90deg); width: 95px">
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <button id="prev"><img src="image/icons/prev.png"></button>
+                            <button id="play" onclick="playPause()"><img src="image/icons/play.png"></button>
+                            <button id="next"><img src="image/icons/next.png"></button>
+                        </div>
+                        <div class="controls">
+                            <button id="loop" onclick="toggleLoop()"><img src="image/icons/loop.png"></button>
+                            <!-- <button id="autoplay">Autoplay: On</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 library">
+                    <h2 class="text-center">My Favorite Song</h2>
+                    <div class="song-list">
+                        <!-- Danh sách bài hát sẽ được thêm vào đây -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================================ FOOTER ===================================================-->
+    <footer class="site-footer">
+        <div class="row">
+            <a href="https://my-music.github.io/owner.html" class="btn-footer col-3" type ="button"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="btn-target col-3" type ="button"><i class="fa-solid fa-headphones"></i></a>
+            <a href="https://my-music.github.io/" class="btn-footer col-3" type ="button"><i class="fa-solid fa-folder-closed"></i></a>
+            <a href="#" class="btn-footer col-3" type ="button"><i class="fa-solid fa-heart-pulse"></i></a>
+        </div>
+    </footer>
+    <!--===============================================================================================-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="js/bootstrap-5.3.0-alpha3-dist/bootstrap.bundle.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/owner.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/music.js"></script>
+</body>
+</html>

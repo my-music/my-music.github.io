@@ -1,2 +1,2 @@
-# my-music.github.io
-My Music
+# Music Player
+**Name** : **Music App**
