@@ -21,6 +21,7 @@ const nextBtn = $(".btn-next");
 const randomBtn = $(".btn-random");
 const repeatBtn = $(".btn-repeat");
 const playlist = $(".playlist");
+const dashboard =$(".dashboard")
 
 const app = {
   currentIndex: 0,
@@ -172,6 +173,7 @@ const app = {
      _this.isShow = !_this.isShow;
       _this.setConfig("isShow", _this.isShow);
       playlist.classList.toggle("show", _this.isShow);
+      dashboard.classList.toggle("hide", _this.isShow);
     };
     
     // Xử lý khi click play
@@ -218,7 +220,7 @@ const app = {
       audio.currentTime = seekTime;
     };
     
-    audio.ontimeupdate = function () {
+    audio.addEventListener("timeupdate", () => {
       const currentMinutes = Math.floor(audio.currentTime / 60);
       let currentSeconds = Math.floor(audio.currentTime % 60);
       if (currentSeconds < 10) {
@@ -235,7 +237,7 @@ const app = {
       }else{
       time.textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
       }
-    };
+    });
     
     // Khi next song
     // When next song

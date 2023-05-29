@@ -44,8 +44,11 @@
     width: 100%;
     max-width: 480px;
     border-bottom: 1px solid #ebebeb;
+    z-index: 99;
   }
-  
+  .dashboard.hide {
+    z-index: 0;
+  }
   /* HEADER */
   header {
     text-align: center;
@@ -166,7 +169,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: var(--primary-color); 
   border-radius: 10px;
 }
 
@@ -176,7 +179,7 @@
 }
 
   .playlist.show {
-    border: 1px solid rgb(123, 108, 80);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     margin-top: 70px;
     position: relative;

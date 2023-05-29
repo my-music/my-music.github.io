@@ -1,12 +1,18 @@
-/* .bg{
+header{
+    margin-bottom: 5px;
+}
 
-} */
+.bg{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .music-player {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    border-radius: 0px 0 20px 20px;
+    padding: 80px 20px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-size: 100% 100%;
     background-image: url(../image/background-musicplayer.png);
@@ -57,6 +63,7 @@
 }
 
 button {
+    font-size: 30px;
     background-color: rgba(255, 255, 255, 0);
     margin: 20px;
     /* color: #000000; */
@@ -83,18 +90,13 @@ input[type="range"] {
 }
 
 /* Thêm các định dạng CSS cho thư viện và danh sách bài hát */
-.library {
-    margin-top: 20px;
-    width: 100%;
-}
-
 .song-list {
-    max-height: 200px;
+    margin: 0 -5px;
+    max-height: 586px;
     overflow-y: scroll;
     border: 3px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 30px;
+    padding: 10px 20px 400px 20px;
     background-image: linear-gradient(140deg, #EADEDB 0%, #d2f1f2 50%, #04cfe9 75%);
 }
  /* width */
@@ -176,7 +178,7 @@ input[type="range"] {
 
 .volume-container{
 position: absolute;
-right: 250px;
+right: 90px;
 }
 
 input#volume{
@@ -189,6 +191,11 @@ input#volume{
 }
 
 @media only screen and (max-width: 768px){ /*------ 635px -----*/
+    .music-player {
+        margin: 0;
+        border-radius: 0 0 20px 20px;
+        padding: 20px;
+    }
     .volume-container{
         right: 0;
         top: 250px;
@@ -197,7 +204,12 @@ input#volume{
         right: 0;
     }
     .song-list{
-        margin-bottom: 0;
+        margin: 0;
+        padding: 10px;
+        max-height: 150px;
     }
+    .library {
+        margin-top: 32px;
+    }     
 }
 

@@ -11,8 +11,8 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/owner.css">
     <link rel="stylesheet" type="text/css" href="css/music.css">
+    <link rel="stylesheet" type="text/css" href="css/owner.css">
     <!--===============================================================================================-->
 </head>
 <body>
@@ -55,44 +55,42 @@
     </header>
 
     <!--============================================ MUSIC PLAYER ===================================================-->
-    <section class="bg">
-        <div class="music-player">
+    <section>
+        <div class="bg row">
+        <div class="col-12 col-md-7 music-player">
             <h1 id="title-music">Reality</h1>
             <h4 id="singer">Lost Frequencies, Janieck Devy</h4>
-                    <div class="album-cover">
-                        <div class="cd-container">
-                            <div class="cd"></div>
-                                <img src="album/cover/reality.jpg" alt="Album Cover" id="cover">
-                                <!-- <img src="image/music-start.jpg" alt="Album Cover" id="cover"> -->
-                            </div>
-                        </div>
-                        <audio id="audio" src="album/music/reality.mp3"></audio>
-                        <div class="seek-container">
-                            <input type="range" min="0" max="100" value="0" class="seek-bar">
-                            <span class="time">0:00 / 0:00</span>
-                            <div class="volume-container">
-                                <button class="volume-btn"><img src="image/icons/volume.png" style="width: 35px;"></button>
-                                <input id="volume" type="range" min="0" max="1" step="0.1" onchange="changeVolume()" value="1" class="volume-bar" style="transform: rotate(-90deg); width: 95px">
-                            </div>
-                        </div>
-                        <div class="controls">
-                            <button id="prev"><img src="image/icons/prev.png"></button>
-                            <button id="play" onclick="playPause()"><img src="image/icons/play.png"></button>
-                            <button id="next"><img src="image/icons/next.png"></button>
-                        </div>
-                        <div class="controls">
-                            <button id="loop" onclick="toggleLoop()"><img src="image/icons/loop.png"></button>
-                            <!-- <button id="autoplay">Autoplay: On</button> -->
-                        </div>
+                <div class="album-cover">
+                    <div class="cd-container">
+                        <div class="cd"></div>
+                            <img src="album/cover/reality.jpg" alt="Album Cover" id="cover">
                     </div>
                 </div>
-                <div class="col-6 library">
-                    <h2 class="text-center">My Favorite Song</h2>
-                    <div class="song-list">
-                        <!-- Danh sách bài hát sẽ được thêm vào đây -->
+                <audio id="audio" src="album/music/reality.mp3"></audio>
+                <div class="seek-container">
+                    <input type="range" min="0" max="100" value="0" class="seek-bar">
+                    <span class="time">0:00 / 0:00</span>
+                    <div class="volume-container">
+                        <button class="volume-btn"><i class="fa-solid fa-volume-high"></i></button>
+                        <input id="volume" type="range" min="0" max="1" step="0.1" onchange="changeVolume()" value="1" class="volume-bar" style="transform: rotate(-90deg); width: 95px">
                     </div>
+                </div>
+                <div class="controls">
+                    <button id="loop" onclick="toggleLoop()"><i class="fa-solid fa-repeat"></i></button>
+                    <button id="prev"><i class="fas fa-step-backward"></i></button>
+                    <button id="play" onclick="playPause()"><i class="fas fa-play icon-play"></i></button>
+                    <button id="next"><i class="fas fa-step-forward"></i></button>
+                    <button id="btn-list"><i class="fa-solid fa-list"></i></button>
                 </div>
             </div>
+            <div class="col-12 col-md-5 library">
+                <div class="song-list">
+                    <h2 class="text-center">My Favorite Song</h2>
+                    <!-- Danh sách bài hát sẽ được thêm vào đây -->
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </section>
 

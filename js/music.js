@@ -6,10 +6,10 @@ function playPause() {
     if (audio.paused) {
         audio.play();
         cover.style.animationPlayState = "running";
-        playButton.innerHTML = "<img src='image/icons/pause.png'>";
+        playButton.innerHTML = "<i class='fas fa-pause icon-pause'></i>";
     } else {
         audio.pause();
-        playButton.innerHTML = "<img src='image/icons/play.png'>";
+        playButton.innerHTML = "<i class='fas fa-play icon-play'></i>";
         cover.style.animationPlayState = "paused";
     }
 };
@@ -17,7 +17,7 @@ function playPause() {
 function toggleLoop() {
     const loopButton = document.getElementById("loop");
     audio.loop = !audio.loop;
-    loopButton.innerHTML = audio.loop ? "<img src='image/icons/no-loop.png'>" : "<img src='image/icons/loop.png'>";
+    loopButton.innerHTML = audio.loop ? "<i class='fa-solid fa-repeat' style='color: #d82222;'></i>" : "<i class='fa-solid fa-repeat'></i>";
 };
 
 // ------------------------------------------------- VOLUME------------------------------------------------------------
@@ -48,10 +48,10 @@ function changeVolume() {
   // Kiểm tra giá trị của thanh trượt âm lượng
   if (volumeSlider.value == 0) {
     // Nếu giá trị là 0, đổi tên nút volume thành "Silent"
-    volumeBtn.innerHTML = "<img src='image/icons/mute.png' style='width: 35px;'>";
+    volumeBtn.innerHTML = "<i class='fa-solid fa-volume-xmark'></i>";
   } else {
     // Nếu giá trị khác 0, đổi tên nút volume thành "Volume"
-    volumeBtn.innerHTML = "<img src='image/icons/volume.png' style='width: 35px;'>";
+    volumeBtn.innerHTML = "<i class='fa-solid fa-volume-high'></i>";
   }
 }
 
@@ -95,7 +95,7 @@ function playSong(index) {
     const singerElement = document.getElementById("singer");
     singerElement.innerText = songs[index].singer;
     audio.play();
-    playButton.innerHTML = "<img src='image/icons/pause.png'>";
+    playButton.innerHTML = "<i class='fas fa-pause icon-pause'></i>";
     cover.style.animationPlayState = "running";
     currentSongIndex = index;
 };
@@ -151,7 +151,7 @@ function nextSong() {
     const singer = document.getElementById("singer");
     singer.textContent = nextSong.singer;
     audio.play();
-    playButton.innerHTML = "<img src='image/icons/pause.png'>";
+    playButton.innerHTML = "<i class='fas fa-pause icon-pause'></i>";
     cover.style.animationPlayState = "running";
   }
   
@@ -172,7 +172,7 @@ function nextSong() {
     const singer = document.getElementById("singer");
     singer.textContent = prevSong.singer;
     audio.play();
-    playButton.innerHTML = "<img src='image/icons/pause.png'>";
+    playButton.innerHTML = "<i class='fas fa-pause icon-pause'></i>";
     cover.style.animationPlayState = "running";
   }
 
