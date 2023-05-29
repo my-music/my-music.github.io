@@ -119,8 +119,11 @@ audio.addEventListener("timeupdate", () => {
     if (durationSeconds < 10) {
         durationSeconds = `0${durationSeconds}`;
     }
-
+    if (isNaN(durationMinutes) || isNaN(durationSeconds)) {
+      time.textContent = `${currentMinutes}:${currentSeconds} / 0:00`;
+    }else{
     time.textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
+    }
 });
 
 // Thêm sự kiện để điều chỉnh bài hát phát ở đoạn nào

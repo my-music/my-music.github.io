@@ -218,7 +218,7 @@ const app = {
       audio.currentTime = seekTime;
     };
     
-    audio.addEventListener("timeupdate", () => {
+    audio.ontimeupdate = function () {
       const currentMinutes = Math.floor(audio.currentTime / 60);
       let currentSeconds = Math.floor(audio.currentTime % 60);
       if (currentSeconds < 10) {
@@ -230,9 +230,13 @@ const app = {
       if (durationSeconds < 10) {
           durationSeconds = `0${durationSeconds}`;
       }
-      if (isNaN(durationMinutes) || isNaN(durationSeconds)) time.text("00:00");
+      if (isNaN(durationMinutes) || isNaN(durationSeconds)) {
+        time.textContent = `${currentMinutes}:${currentSeconds} / 0:00`;
+      }else{
       time.textContent = `${currentMinutes}:${currentSeconds} / ${durationMinutes}:${durationSeconds}`;
-    });
+      }
+    };
+    
     // Khi next song
     // When next song
     nextBtn.onclick = function () {
