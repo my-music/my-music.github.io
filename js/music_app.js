@@ -42,8 +42,8 @@ const app = {
     {
       name: "Bật Tình Yêu Lên",
       singer: "Tăng Duy Tân, Hòa Minzy",
-      path: "album/music/bat-tinh-yeu-len.mp3",
-      image: "album/cover/bat-tinh-yeu-len.jpg"
+      path: "https://dl.dropboxusercontent.com/s/7nqwtr2de6ul55x/bat-tinh-yeu-len.mp3",
+      image: "https://dl.dropboxusercontent.com/s/9yy3otbejzov8ul/bat-tinh-yeu-len.jpg"
     },
     {
       name: "Cùng Anh",
@@ -78,74 +78,74 @@ const app = {
     {
       name: "Cơn Mưa Ngang Qua",
       singer: "Sơn Tùng M-TP",
-      path: "album/music/con-mua-ngang-qua.mp3",
-      image: "album/cover/con-mua-ngang-qua.jpg"
+      path: "https://dl.dropboxusercontent.com/s/pnu7mgig3zmv0j8/con-mua-ngang-qua.mp3",
+      image: "https://dl.dropboxusercontent.com/s/effb2v2ak80e4lq/con-mua-ngang-qua.jpg"
     },
     {
       name: "Way Back Home",
       singer: "Huy Vạc, Freak",
-      path: "album/music/way-back-home.mp3",
-      image: "album/cover/way-back-home.jpg"
+      path: "https://dl.dropboxusercontent.com/s/y06np8hyi4ze9el/way-back-home.mp3",
+      image: "https://dl.dropboxusercontent.com/s/7kimc33fyowcwtk/way-back-home.jpg"
     },
     {
       name: "2002",
       singer: "Anne Marie",
-      path: "album/music/2002.mp3",
-      image: "album/cover/2002.jpg"
+      path: "https://dl.dropboxusercontent.com/s/5kdnincbtlns83g/2002.mp3",
+      image: "https://dl.dropboxusercontent.com/s/4kiexm3lfooyw6r/2002.jpg"
     },
     {
       name: "Reality",
       singer: "Lost Frequencies, Janieck Devy",
-      path: "album/music/reality.mp3",
-      image: "album/cover/reality.jpg"
+      path: "https://dl.dropboxusercontent.com/s/ztp3cffuwqbgvbw/reality.mp3",
+      image: "https://dl.dropboxusercontent.com/s/mv5azb0sfuqv000/reality.jpg"
     },
     {
       name: "That Girl",
       singer: "Olly  Murs",
-      path: "album/music/that-girl.mp3",
-      image: "album/cover/that-girl.jpg"
+      path: "https://dl.dropboxusercontent.com/s/wzmt1xtqc7jcxnm/that-girl.mp3",
+      image: "https://dl.dropboxusercontent.com/s/n8id1tzgc0pgk3j/that-girl.jpg"
     },
     {
       name: "Drive My Car",
       singer: "Deamn",
-      path: "album/music/drive-my-car.mp3",
-      image: "album/cover/drive-my-car.jpg"
+      path: "https://dl.dropboxusercontent.com/s/x2mv5hg4xv9utrp/drive-my-car.mp3",
+      image: "https://dl.dropboxusercontent.com/s/cgv5tzex48ttlfh/drive-my-car.jpg"
     },
     {
       name: "On My Way",
       singer: "Alan Walker, Sabrina Carpenter, Farruko",
-      path: "album/music/on-my-way.mp3",
-      image: "album/cover/on-my-way.jpg"
+      path: "https://dl.dropboxusercontent.com/s/6j4l9kadn28zoeu/on-my-way.mp3",
+      image: "https:/dl.dropboxusercontent.com/s/v3eytyayl0d6ama/on-my-way.jpg"
     },
     {
       name: "Run Free",
       singer: "Deep Chills, IVIE",
-      path: "album/music/run-free.mp3",
-      image: "album/cover/run-free.jpg"
+      path: "https://dl.dropboxusercontent.com/s/88keuhsm0s82qui/run-free.mp3",
+      image: "https://dl.dropboxusercontent.com/s/7eo8ykm53q4vn0g/run-free.jpg"
     },
     {
       name: "The River",
       singer: "Axel Johansson",
-      path: "album/music/the-river.mp3",
-      image: "album/cover/the-river.jpg"
+      path: "https://dl.dropboxusercontent.com/s/eg5ahrknvsrpicq/the-river.mp3",
+      image: "https://dl.dropboxusercontent.com/s/ik4v3v0o59hneqy/the-river.jpg"
     },
     {
       name: "Alone",
       singer: "Alan Walker & Ava Max",
-      path: "album/music/alone.mp3",
-      image: "album/cover/alone.jpg"
+      path: "https://dl.dropboxusercontent.com/s/g76gq2as3qja4j0/alone.mp3",
+      image: "https://dl.dropboxusercontent.com/s/txdob4qh6ksp7j0/alone.jpg"
     },
     {
       name: "Lily",
       singer: "Alan Walker, K-391, Emelie Hollow",
-      path: "album/music/lily.mp3",
-      image: "album/cover/lily.jpg"
+      path: "https://dl.dropboxusercontent.com/s/oaoz65lc458je5d/lily.mp3",
+      image: "https://dl.dropboxusercontent.com/s/gacw1475kgjbvcc/lily.jpg"
     },
     {
       name: "Lost Control",
       singer: "Alan Walker, Sorana",
-      path: "album/music/lost-control.mp3",
-      image: "album/cover/lost-control.jfif"
+      path: "https://dl.dropboxusercontent.com/s/b75n2qy4vaujy9d/lost-control.mp3",
+      image: "https://dl.dropboxusercontent.com/s/pqwiv8mwnpznwzx/lost-control.jfif"
     },
     {
       name: "Runaway",
@@ -156,8 +156,8 @@ const app = {
     {
       name: "Holly Dolly",
       singer: "Dolly",
-      path: "album/music/holly-dolly.mp3",
-      image: "album/cover/holly-dolly.jfif"
+      path: "https://dl.dropboxusercontent.com/s/39zmaf7sn1q9s9b/holly-dolly.mp3",
+      image: "https://dl.dropboxusercontent.com/s/blxfp753j48vopr/holly-dolly.jfif"
     }
   ],
   setConfig: function (key, value) {
