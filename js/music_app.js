@@ -34,6 +34,12 @@ const app = {
   // config: JSON.parse(localStorage.getItem(PlAYER_STORAGE_KEY)) || {},
   songs: [
     {
+      name: "Nắm Bàn Tay Say Cả Đời",
+      singer: "Đạt Trần, Nâu",
+      path: "album/music/nam-ban-tay-say-ca-doi.mp3",
+      image: "album/cover//nam-ban-tay-say-ca-doi.jfif"
+    },
+    {
       name: "Nhất Trên Đời",
       singer: "VAnh, BMZ",
       path: "album/music/nhat-tren-doi.mp3",
