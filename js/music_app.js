@@ -34,10 +34,58 @@ const app = {
   // config: JSON.parse(localStorage.getItem(PlAYER_STORAGE_KEY)) || {},
   songs: [
     {
+      name: "Có Đâu Ai Ngờ",
+      singer: "Thu Cầm",
+      path: "album/music/co-dau-ai-ngo.mp3",
+      image: "album/cover/co-dau-ai-ngo.jfif"
+    },
+    {
+      name: "Gió",
+      singer: "Jank",
+      path: "album/music/gio.mp3",
+      image: "album/cover/gio.jpg"
+    },
+    {
+      name: "Là Anh",
+      singer: "Phạm Lịch, BMZ",
+      path: "album/music/la-anh.mp3",
+      image: "https://i.scdn.co/image/ab67616d0000b273b3acabff70027bdaaceb84ad"
+    },
+    {
+      name: "Cô Gái Này Là Của Ai",
+      singer: "Krix, Rush (Đoàn Quốc Vinh), Nhi Nhi",
+      path: "album/music/co-gai-nay-la-cua-ai.mp3",
+      image: "https://i.scdn.co/image/ab67616d0000b2735d1e7fcc36547700dcc6c16a"
+    },
+    {
+      name: "Đâu Ai Dám Hứa",
+      singer: "Czee",
+      path: "album/music/dau-ai-dam-hua.mp3",
+      image: "https://i1.sndcdn.com/artworks-BVko6ON4vMXI7qRN-q5Jw4Q-t500x500.jpg"
+    },
+    {
+      name: "Anh Muốn Đưa Em Về Không",
+      singer: "Ngô Lan Hương",
+      path: "album/music/anh-muon-dua-em-ve-khong.mp3",
+      image: "https://i1.sndcdn.com/artworks-hdyIXFUGpQFLOydG-wOVjoQ-t500x500.jpg"
+    },
+    {
+      name: "Lửng Lơ",
+      singer: "Masew, B Ray, Red T, Ý Tiên",
+      path: "album/music/lung-lo.mp3",
+      image: "album/cover/lung-lo.jpg"
+    },
+    {
+      name: "Chạy Về Khóc Với Anh",
+      singer: "ERIK",
+      path: "album/music/yeu-duong-kho-qua-thi-chay-ve-khoc-voi-anh.mp3",
+      image: "album/cover/yeu-duong-kho-qua-thi-chay-ve-khoc-voi-anh.jpg"
+    },
+    {
       name: "Nắm Bàn Tay Say Cả Đời",
       singer: "Đạt Trần, Nâu",
       path: "album/music/nam-ban-tay-say-ca-doi.mp3",
-      image: "album/cover//nam-ban-tay-say-ca-doi.jfif"
+      image: "album/cover/nam-ban-tay-say-ca-doi.jfif"
     },
     {
       name: "Nhất Trên Đời",
