@@ -40,22 +40,22 @@ const app = {
       image: "album/cover/co-dau-ai-ngo.jfif"
     },
     {
-      name: "Gió",
-      singer: "Jank",
-      path: "album/music/gio.mp3",
-      image: "album/cover/gio.jpg"
-    },
-    {
       name: "Là Anh",
       singer: "Phạm Lịch, BMZ",
       path: "album/music/la-anh.mp3",
       image: "https://i.scdn.co/image/ab67616d0000b273b3acabff70027bdaaceb84ad"
     },
     {
-      name: "Cô Gái Này Là Của Ai",
-      singer: "Krix, Rush (Đoàn Quốc Vinh), Nhi Nhi",
-      path: "album/music/co-gai-nay-la-cua-ai.mp3",
-      image: "https://i.scdn.co/image/ab67616d0000b2735d1e7fcc36547700dcc6c16a"
+      name: "Anh Kết Em Rồi",
+      singer: "DJ Mie, Hồng Thanh",
+      path: "album/music/anh-ket-em-roi.mp3",
+      image: "album/cover/anh-ket-em-roi.jpg"
+    },
+    {
+      name: "Bật Tình Yêu Lên",
+      singer: "Tăng Duy Tân, Hòa Minzy",
+      path: "album/music/bat-tinh-yeu-len.mp3",
+      image: "album/cover/bat-tinh-yeu-len.jpg"
     },
     {
       name: "Đâu Ai Dám Hứa",
@@ -64,10 +64,40 @@ const app = {
       image: "https://i1.sndcdn.com/artworks-BVko6ON4vMXI7qRN-q5Jw4Q-t500x500.jpg"
     },
     {
+      name: "Cùng Anh",
+      singer: "Ngọc Dolil, Hagi, STee",
+      path: "album/music/cung-anh.mp3",
+      image: "https://avatar-ex-swe.nixcdn.com/song/2017/12/21/d/c/5/f/1513874388548.jpg"
+    },
+    {
+      name: "Đám Cưới Nha?",
+      singer: "DJ Mie, Hồng Thanh",
+      path: "album/music/dam-cuoi-nha.mp3",
+      image: "album/cover/dam-cuoi-nha.jfif"
+    },
+    {
+      name: "Gió",
+      singer: "Jank",
+      path: "album/music/gio.mp3",
+      image: "album/cover/gio.jpg"
+    },
+    {
+      name: "Cô Gái Này Là Của Ai?",
+      singer: "Krix, Rush (Đoàn Quốc Vinh), Nhi Nhi",
+      path: "album/music/co-gai-nay-la-cua-ai.mp3",
+      image: "https://i.scdn.co/image/ab67616d0000b2735d1e7fcc36547700dcc6c16a"
+    },
+    {
       name: "Anh Muốn Đưa Em Về Không",
       singer: "Ngô Lan Hương",
       path: "album/music/anh-muon-dua-em-ve-khong.mp3",
       image: "https://i1.sndcdn.com/artworks-hdyIXFUGpQFLOydG-wOVjoQ-t500x500.jpg"
+    },
+    {
+      name: "Nắm Bàn Tay Say Cả Đời",
+      singer: "Đạt Trần, Nâu",
+      path: "album/music/nam-ban-tay-say-ca-doi.mp3",
+      image: "album/cover/nam-ban-tay-say-ca-doi.jfif"
     },
     {
       name: "Lửng Lơ",
@@ -82,28 +112,10 @@ const app = {
       image: "album/cover/yeu-duong-kho-qua-thi-chay-ve-khoc-voi-anh.jpg"
     },
     {
-      name: "Nắm Bàn Tay Say Cả Đời",
-      singer: "Đạt Trần, Nâu",
-      path: "album/music/nam-ban-tay-say-ca-doi.mp3",
-      image: "album/cover/nam-ban-tay-say-ca-doi.jfif"
-    },
-    {
       name: "Nhất Trên Đời",
       singer: "VAnh, BMZ",
       path: "album/music/nhat-tren-doi.mp3",
       image: "album/cover/nhat-tren-doi.jpg"
-    },
-    {
-      name: "Bật Tình Yêu Lên",
-      singer: "Tăng Duy Tân, Hòa Minzy",
-      path: "album/music/bat-tinh-yeu-len.mp3",
-      image: "album/cover/bat-tinh-yeu-len.jpg"
-    },
-    {
-      name: "Cùng Anh",
-      singer: "Ngọc Dolil, Hagi, STee",
-      path: "album/music/cung-anh.mp3",
-      image: "https://avatar-ex-swe.nixcdn.com/song/2017/12/21/d/c/5/f/1513874388548.jpg"
     },
     {
       name: "Những Điều Nhỏ Nhoi",
