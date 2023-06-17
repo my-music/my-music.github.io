@@ -46,8 +46,18 @@
     border-bottom: 1px solid #ebebeb;
     z-index: 99;
   }
+  html.hide {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
   .dashboard.hide {
     z-index: 0;
+  }
+  .dashboard.hide>.cd{
+    width: 222px !important;
+    opacity: 0 !important;
+    transition: width 2s;
+    transition: opacity 2s;
   }
   /* HEADER */
   header {
@@ -93,12 +103,25 @@
     color: #666;
     padding: 18px;
     font-size: 18px;
+    border: hidden;
   }
   
   .control .btn.active {
     color: var(--primary-color);
+    background-color: white;
+    border: hidden ;
   }
   
+  .btn.btn-list {
+    border: hidden ;
+  }
+  
+  .btn.btn-list.active {
+    color: var(--primary-color);
+    background-color: white;
+    border: hidden ;
+  }
+
   .control .btn-toggle-play {
     width: 56px;
     height: 56px;
@@ -150,9 +173,9 @@
     overflow-y: scroll;
     overflow-x: hidden;
     margin-top: 440px;
-    padding: 12px;
+    padding: 10px;
     background: white;
-    transition: margin-top 0.2s;
+    transition: margin-top 0.2s ease-out;
   }
 
   /* width */

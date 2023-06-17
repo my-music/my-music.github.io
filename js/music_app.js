@@ -1,6 +1,3 @@
-// Một số bài hát có thể bị lỗi do liên kết bị hỏng. Vui lòng thay thế liên kết khác để có thể phát
-// Some songs may be faulty due to broken links. Please replace another link so that it can be played
-
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -22,6 +19,7 @@ const randomBtn = $(".btn-random");
 const repeatBtn = $(".btn-repeat");
 const playlist = $(".playlist");
 const dashboard =$(".dashboard")
+const html =$("html")
 
 const app = {
   currentIndex: 0,
@@ -290,6 +288,8 @@ const app = {
       _this.setConfig("isShow", _this.isShow);
       playlist.classList.toggle("show", _this.isShow);
       dashboard.classList.toggle("hide", _this.isShow);
+      html.classList.toggle("hide", _this.isShow);
+      listBtn.classList.toggle("active", _this.isShow);
     };
     
     // Xử lý khi click play
@@ -439,7 +439,7 @@ const app = {
     }, 300);
   },
   loadCurrentSong: function () {
-    title.textContent = "Music App - " + this.currentSong.name;
+    title.textContent = "For You - " + this.currentSong.name;
     heading.textContent = this.currentSong.name;
     cdThumb.style.backgroundImage = `url('${this.currentSong.image}')`;
     audio.src = this.currentSong.path;
