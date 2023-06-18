@@ -338,11 +338,11 @@
     padding: 20px;
     width: 380px;
     border-radius: 8px;
-    border: 0.5px solid var(--primary-color);
+    border: 0.1px solid var(--primary-color);
     animation: showAlert 0.5s ease-in-out;
   }
   #error{
-    background-color: rgb(201, 197, 197);
+    background-color: rgb(237, 234, 234);
   }
   #success{
     background-color: aliceblue;
@@ -358,19 +358,10 @@
   @keyframes showAlert {
     from{
         opacity: 0;
-        transform: translate(-50%, 100px);
+        transform: translate(0, 100px);
     } to{
         opacity: 1;
-        transform: translate(-50%, 0);
-    }
-  }
-  @keyframes hideAlert {
-    from{
-        opacity: 1;
-        transform: translate(-50%, 0);
-    } to{
-        opacity: 0;
-        transform: translate(-50%, 100px);
+        transform: translate(0, 0);
     }
   }
 
@@ -394,6 +385,15 @@
       width: 90%;
       left: 50%;
       transform: translate(-50%, 0);
+    }
+    @keyframes showAlert {
+      from{
+          opacity: 0;
+          transform: translate(-50%, 100px);
+      } to{
+          opacity: 1;
+          transform: translate(-50%, 0);
+      }
     }
 }
 

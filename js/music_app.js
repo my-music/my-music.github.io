@@ -182,6 +182,12 @@ const app = {
       image: "album/cover/that-girl.jpg"
     },
     {
+      name: "Waiting For Love",
+      singer: "Avicii",
+      path: "album/music/waiting-for-love.mp3",
+      image: "album/cover/waiting-for-love.jpg"
+    },
+    {
       name: "Drive My Car",
       singer: "Deamn",
       path: "album/music/drive-my-car.mp3",

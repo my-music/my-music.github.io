@@ -1,6 +1,8 @@
 window.addEventListener('offline', function (){
     document.getElementById('success').style.display = 'none';
-    document.getElementById('error').style.display = 'block';
+    setTimeout(function() {
+        document.getElementById('error').style.display = 'block';
+    }, 2000);
 })
 
 window.addEventListener('online', function (){
@@ -8,6 +10,5 @@ window.addEventListener('online', function (){
     document.getElementById('success').style.display = 'block';
     setTimeout(function() {
         document.getElementById('success').style.display = 'none';
-        document.getElementById('success').style.animation = 'hideAlert 0.5s ease-in-out';
-      }, 5000);
+    }, 5000);
 });
