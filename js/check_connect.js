@@ -8,5 +8,6 @@ window.addEventListener('online', function (){
     document.getElementById('success').style.display = 'block';
     setTimeout(function() {
         document.getElementById('success').style.display = 'none';
+        document.getElementById('success').style.animation = 'hideAlert 0.5s ease-in-out';
       }, 5000);
 });
