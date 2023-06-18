@@ -6,4 +6,7 @@ window.addEventListener('offline', function (){
 window.addEventListener('online', function (){
     document.getElementById('error').style.display = 'none';
     document.getElementById('success').style.display = 'block';
+    setTimeout(function() {
+        document.getElementById('success').style.display = 'none';
+      }, 5000);
 });
