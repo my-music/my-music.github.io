@@ -56,12 +56,6 @@ const app = {
       image: "album/cover/bat-tinh-yeu-len.jpg"
     },
     {
-      name: "Đâu Ai Dám Hứa",
-      singer: "Czee",
-      path: "album/music/dau-ai-dam-hua.mp3",
-      image: "https://i1.sndcdn.com/artworks-BVko6ON4vMXI7qRN-q5Jw4Q-t500x500.jpg"
-    },
-    {
       name: "Cùng Anh",
       singer: "Ngọc Dolil, Hagi, STee",
       path: "album/music/cung-anh.mp3",
@@ -90,6 +84,12 @@ const app = {
       singer: "Ngô Lan Hương",
       path: "album/music/anh-muon-dua-em-ve-khong.mp3",
       image: "https://i1.sndcdn.com/artworks-hdyIXFUGpQFLOydG-wOVjoQ-t500x500.jpg"
+    },
+    {
+      name: "Đâu Ai Dám Hứa",
+      singer: "Czee",
+      path: "album/music/dau-ai-dam-hua.mp3",
+      image: "https://i1.sndcdn.com/artworks-BVko6ON4vMXI7qRN-q5Jw4Q-t500x500.jpg"
     },
     {
       name: "Nắm Bàn Tay Say Cả Đời",
@@ -164,6 +164,18 @@ const app = {
       image: "album/cover/reality.jpg"
     },
     {
+      name: "Believer",
+      singer: "Imagine Dragons",
+      path: "album/music/believer.mp3",
+      image: "album/cover/believer.jfif"
+    },
+    {
+      name: "The Nights",
+      singer: "Avicii",
+      path: "album/music/the-nights.mp3",
+      image: "album/cover/the-nights.jpg"
+    },
+    {
       name: "That Girl",
       singer: "Olly  Murs",
       path: "album/music/that-girl.mp3",
@@ -174,6 +186,12 @@ const app = {
       singer: "Deamn",
       path: "album/music/drive-my-car.mp3",
       image: "album/cover/drive-my-car.jpg"
+    },
+    {
+      name: "Fly Away",
+      singer: "TheFatRat",
+      path: "album/music/flyaway.mp3",
+      image: "album/cover/flyaway.jpg"
     },
     {
       name: "On My Way",
@@ -192,6 +210,12 @@ const app = {
       singer: "Axel Johansson",
       path: "album/music/the-river.mp3",
       image: "album/cover/the-river.jpg"
+    },
+    {
+      name: "Natural",
+      singer: "Imagine Dragons",
+      path: "album/music/natural.mp3",
+      image: "album/cover/natural.jfif"
     },
     {
       name: "Alone",
@@ -218,11 +242,83 @@ const app = {
       image: "album/cover/runaway.jfif"
     },
     {
-      name: "Holly Dolly",
-      singer: "Dolly",
-      path: "album/music/holly-dolly.mp3",
-      image: "album/cover/holly-dolly.jfif"
+      name: "Demons",
+      singer: "Imagine Dragons",
+      path: "album/music/demons.mp3",
+      image: "album/cover/demons.jfif"
+    },
+    {
+      name: "Time Lapse",
+      singer: "TheFatRat",
+      path: "album/music/time-lapse.mp3",
+      image: "album/cover/time-lapse.jpg"
+    },
+    {
+      name: "Oblivion",
+      singer: "TheFatRat, Lola Blanc",
+      path: "album/music/oblivion.mp3",
+      image: "album/cover/oblivion.jpg"
+    },
+    {
+      name: "Close To The Sun",
+      singer: "TheFatRat, Anjulie",
+      path: "album/music/close-to-the-sun.mp3",
+      image: "album/cover/close-to-the-sun.jpg"
+    },
+    {
+      name: "Jackpot",
+      singer: "TheFatRat",
+      path: "album/music/jackpot.mp3",
+      image: "album/cover/jackpot.jpg"
+    },
+    {
+      name: "Rise Up",
+      singer: "TheFatRat",
+      path: "album/music/rise-up.mp3",
+      image: "album/cover/rise-up.jpg"
+    },
+    {
+      name: "Monody",
+      singer: "TheFatRat, Laura Brehm",
+      path: "album/music/monody.mp3",
+      image: "album/cover/monody.jfif"
+    },
+    {
+      name: "Unity",
+      singer: "TheFatRat",
+      path: "album/music/unity.mp3",
+      image: "album/cover/unity.jfif"
+    },
+    {
+      name: "Never Be Alone",
+      singer: "TheFatRat",
+      path: "album/music/never-be-alone.mp3",
+      image: "album/cover/never-be-alone.jpg"
+    },
+    {
+      name: "Origin",
+      singer: "TheFatRat",
+      path: "album/music/origin.mp3",
+      image: "album/cover/origin.jpg"
+    },
+    {
+      name: "Solitude",
+      singer: "TheFatRat, Slaydit",
+      path: "album/music/solitude.mp3",
+      image: "album/cover/solitude.jpg"
+    },
+    {
+      name: "WindFall",
+      singer: "TheFatRat",
+      path: "album/music/windfall.mp3",
+      image: "album/cover/windfall.jpg"
     }
+    // {
+    //   name: "Holly Dolly",
+    //   singer: "Dolly",
+    //   path: "album/music/holly-dolly.mp3",
+    //   image: "album/cover/holly-dolly.jfif"
+    // }
   ],
   setConfig: function (key, value) {
     this.config[key] = value;

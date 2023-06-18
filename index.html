@@ -58,6 +58,14 @@
   <!-- Playlist -->
   <div class="playlist">
   </div>
+   <div class="alert" id="error">
+        Bạn đang ở chế độ offline
+        <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa-sharp fa-solid fa-circle-xmark fa-2xs"></i></span>
+    </div>
+    <div class="alert" id="success">
+        <i class="fa-solid fa-wifi" style="color: #34df48;"></i>&nbsp; Đã khôi phục kết nối Internet
+        <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa-sharp fa-solid fa-circle-xmark fa-2xs"></i></span>
+    </div>
 </div>
 <!--============================================ FOOTER ===================================================-->
 <!-- <footer class="site-footer">
@@ -69,5 +77,6 @@
   </div>
 </footer> -->
 <script src="js/music_app.js"></script>
+<script src="js/check_connect.js"></script>
 </body>
 </html>
