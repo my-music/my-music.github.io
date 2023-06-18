@@ -377,10 +377,10 @@
       transform: none;
     }
     .playlist{
-      max-height: 450px;
+      max-height: 650px;
     }
     .playlist.playlist.show{
-      max-height: 700px;
+      max-height: 585px;
     }
 }
 
