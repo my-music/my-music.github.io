@@ -11,13 +11,16 @@ function startTimeout(duration) {
   if (duration) {
     timeoutID = setTimeout(() => {
       clockIcon.classList.remove("red");
+      clockIcon.title = "Hẹn giờ";
       audio.pause();
     }, duration);
 
     clockIcon.classList.add("red");
-      audio.play();
+    clockIcon.title = "Hủy hẹn giờ";
+    audio.play();
   } else {
     clockIcon.classList.remove("red");
+    clockIcon.title = "Hẹn giờ";
     // Continue audio and don't set a timeout
   }
 }
@@ -37,19 +40,20 @@ setTimeoutBtn.addEventListener("click", () => {
 
 function myFunction() {
     const x = document.getElementById('timeout').value;
-    if(x < 60000){
-        timer.innerHTML = "Sẽ dừng phát vào: " + Math.floor(x / 1000) + " giây nữa" ;
-    }  else{
-        timer.innerHTML = "Sẽ dừng phát vào: " + Math.floor(x / 60000) + " phút nữa" ;
+    if(x < 1){
+        timer.innerHTML = "Hãy hẹn giờ ít nhất 1 phút" ;
+    } else if(x > 181){
+      timer.innerHTML = "Không nên nghe nhạc quá 181 phút!" ;
+    } else{
+        timer.innerHTML = "Sẽ dừng phát trong: " + x + " phút" ;
     }
-    
 };
 
 confirmTimeoutBtn.addEventListener("click", () => {
   const selectedOption = document.querySelector('input[name="timeout-option"]');
 
   if (selectedOption) {
-    const duration = parseInt(selectedOption.value);
+    const duration = parseInt(selectedOption.value * 60000);
     startTimeout(duration);
   } else {
     startTimeout(0);
