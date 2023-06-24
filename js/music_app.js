@@ -50,6 +50,12 @@ const app = {
       image: "album/cover/anh-ket-em-roi.jpg"
     },
     {
+      name: "Cô gái M52",
+      singer: "Huy, Tùng Viu",
+      path: "album/music/co-gai-m52.mp3",
+      image: "album/cover/co-gai-m52.jpg"
+    },
+    {
       name: "Bật Tình Yêu Lên",
       singer: "Tăng Duy Tân, Hòa Minzy",
       path: "album/music/bat-tinh-yeu-len.mp3",
@@ -96,6 +102,12 @@ const app = {
       singer: "Đạt Trần, Nâu",
       path: "album/music/nam-ban-tay-say-ca-doi.mp3",
       image: "album/cover/nam-ban-tay-say-ca-doi.jfif"
+    },
+    {
+      name: "Chuyện Tình Tôi",
+      singer: "KHOA, KASS",
+      path: "album/music/chuyen-tinh-toi.mp3",
+      image: "album/cover/chuyen-tinh-toi.jpg"
     },
     {
       name: "Lửng Lơ",

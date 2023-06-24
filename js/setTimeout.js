@@ -49,15 +49,21 @@ function myFunction() {
     }
 };
 
-confirmTimeoutBtn.addEventListener("click", () => {
-  const selectedOption = document.querySelector('input[name="timeout-option"]');
+confirmTimeoutBtn.addEventListener("click", handleTimeoutConfirmation);
+document.addEventListener("keydown", (event) => {
+  var keyCode = event.keyCode || event.which;
+  if (keyCode === 13) {
+    handleTimeoutConfirmation();
+  }
+});
 
+function handleTimeoutConfirmation() {
+  const selectedOption = document.querySelector('input[name="timeout-option"]');
   if (selectedOption) {
-    const duration = parseInt(selectedOption.value * 60000);
+    const duration = parseInt(selectedOption.value) * 60000;
     startTimeout(duration);
   } else {
     startTimeout(0);
   }
-
   hideTimeoutOptions();
-});
+}
