@@ -116,7 +116,6 @@
   .btn.btn-list.active {
     font-size: 30px;
     color: var(--primary-color);
-    background-color: white;
     border: hidden ;
     transition: 0.2s;
   }

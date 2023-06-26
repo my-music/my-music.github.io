@@ -1,8 +1,8 @@
-const clockIcon = document.getElementById("clock-icon");
-const setTimeoutBtn = document.getElementById("set-timeout-btn");
-const timeoutOptions = document.getElementById("timeout-options");
-const confirmTimeoutBtn = document.getElementById("confirm-timeout-btn");
-const timer = document.getElementById("timer");
+const clockIcon = $("#clock-icon");
+const setTimeoutBtn = $("#set-timeout-btn");
+const timeoutOptions = $("#timeout-options");
+const confirmTimeoutBtn = $("#confirm-timeout-btn");
+const timer = $("#timer");
 let timeoutID = null;
 
 function startTimeout(duration) {
@@ -39,13 +39,16 @@ setTimeoutBtn.addEventListener("click", () => {
 });
 
 function myFunction() {
-    const x = document.getElementById('timeout').value;
-    if(x < 1){
-        timer.innerHTML = "Hãy hẹn giờ ít nhất 1 phút" ;
+    const x = $('#timeout').value;
+    if(x < 5){
+        timer.innerHTML = "Hãy hẹn giờ ít nhất 5 phút" ;
+        confirmTimeoutBtn.disabled = true;
     } else if(x > 181){
       timer.innerHTML = "Không nên nghe nhạc quá 181 phút!" ;
+      confirmTimeoutBtn.disabled = true;
     } else{
         timer.innerHTML = "Sẽ dừng phát trong: " + x + " phút" ;
+        confirmTimeoutBtn.disabled = false;
     }
 };
 
@@ -58,12 +61,15 @@ document.addEventListener("keydown", (event) => {
 });
 
 function handleTimeoutConfirmation() {
-  const selectedOption = document.querySelector('input[name="timeout-option"]');
-  if (selectedOption) {
-    const duration = parseInt(selectedOption.value) * 60000;
-    startTimeout(duration);
-  } else {
-    startTimeout(0);
+  const x = $('#timeout').value;
+  if( x >= 5 && x <= 181 ){
+    const selectedOption = document.querySelector('input[name="timeout-option"]');
+    if (selectedOption) {
+      const duration = parseInt(selectedOption.value) * 60000;
+      startTimeout(duration);
+    } else {
+      startTimeout(0);
+    }
+    hideTimeoutOptions();
   }
-  hideTimeoutOptions();
 }
