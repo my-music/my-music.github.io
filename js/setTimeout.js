@@ -16,7 +16,7 @@ function startTimeout(duration) {
     }, duration);
 
     clockIcon.classList.add("red");
-    clockIcon.title = "Hủy hẹn giờ";
+    clockIcon.title = "Đã hẹn giờ trong: " + duration / 60000 + " phút";
     audio.play();
   } else {
     clockIcon.classList.remove("red");
@@ -34,10 +34,11 @@ function hideTimeoutOptions() {
 }
 
 setTimeoutBtn.addEventListener("click", () => {
-  startTimeout(0); // clear current timeout, if any
+// startTimeout(0); // clear current timeout, if any
   showTimeoutOptions();
 });
 
+confirmTimeoutBtn.disabled = true;
 function myFunction() {
     const x = $('#timeout').value;
     if(x < 5){

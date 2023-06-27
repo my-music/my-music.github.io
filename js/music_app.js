@@ -432,6 +432,14 @@ const app = {
       cdThumbAnimate.pause();
     };
 
+    // Khi song được played thì ngăn chặn việc reload
+    // When the song is played, it prevents reloading
+    window.addEventListener('beforeunload', function(event) {
+      if ( _this.isPlaying) {
+          event.preventDefault();
+      }
+    });
+
     // Khi tiến độ bài hát thay đổi
     // When the song progress changes
     audio.ontimeupdate = function () {
@@ -450,6 +458,8 @@ const app = {
       audio.currentTime = seekTime;
     };
     
+    // Hiển thị thời gian
+    // Show the time
     audio.addEventListener("timeupdate", () => {
       const currentMinutes = Math.floor(audio.currentTime / 60);
       let currentSeconds = Math.floor(audio.currentTime % 60);
