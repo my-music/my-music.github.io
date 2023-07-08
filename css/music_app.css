@@ -257,9 +257,6 @@
 
 /* PLAYLIST */
 .playlist {
-  max-height: 530px;
-  overflow-y: scroll;
-  overflow-x: hidden;
   margin-top: 440px;
   padding: 10px;
   background: white;
@@ -291,6 +288,8 @@
 
   .playlist.show {
     max-height: 668px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     margin-top: 80px;
@@ -463,11 +462,8 @@
     .song:hover{
       transform: none;
     }
-    .playlist{
-      max-height: 583px;
-    }
     .playlist.playlist.show{
-      max-height: 645px;
+      max-height: 583px;
     }
     .alert{
       width: 90%;
