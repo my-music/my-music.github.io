@@ -92,6 +92,12 @@ const app = {
       image: "https://i1.sndcdn.com/artworks-hdyIXFUGpQFLOydG-wOVjoQ-t500x500.jpg"
     },
     {
+      name: "Khi Mà",
+      singer: "Ronboogz",
+      path: "album/music/khi-ma.mp3",
+      image: "album/cover/khi-ma.jpg"
+    },
+    {
       name: "Đâu Ai Dám Hứa",
       singer: "Czee",
       path: "album/music/dau-ai-dam-hua.mp3",
