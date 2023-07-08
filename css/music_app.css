@@ -464,7 +464,7 @@
       transform: none;
     }
     .playlist{
-      max-height: 630px;
+      max-height: 610px;
     }
     .playlist.playlist.show{
       max-height: 645px;
