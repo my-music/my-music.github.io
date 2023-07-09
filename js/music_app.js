@@ -443,6 +443,8 @@ const app = {
     window.addEventListener('beforeunload', function(event) {
       if ( _this.isPlaying) {
           event.preventDefault();
+          // Google Chrome requires returnValue to be set.
+          event.returnValue = '';
       }
     });
 
